@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bank Calculation</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl text-center mt-6">
+        <span class="font-semibold text-blue-700">Bank Calculation</span>
+      </h1>
+    </header>
+    <main>
+      <section>
+        <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white mt-12">
+          <div class="bg-green-400 p-8 rounded-xl">
+            <h4 class="text-2xl">Deposit</h4>
+            <h2 class="text-5xl">$<span  id="deposit-total">00</span></h2>
+          </div>
+          <div class="bg-sky-400 p-8 rounded-xl">
+            <h4 class="text-2xl">Withdraw</h4>
+            <h2 id="Withdraw-text" class="text-5xl">$00</h2>
+          </div>
+          <div class="bg-violet-400 p-8 rounded-xl">
+            <h4 class="text-2xl">Balance</h4>
+            <h2 class="text-5xl">$<span id="balance-total">1250</span></h2>
+          </div>
+        </div>
+      </section>
+      <section class="mt-12">
+        <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto mt-6">
+          <div class="bg-fuchsia-400 p-8 rounded-xl">
+            <h4 class="text-2xl text-white">Deposit Here</h4>
+            <div>
+              <input
+                id="deposit-field"
+                class="w-9/12 block mb-2 px-3 rounded mb-4 mt-4"
+                type="text"
+                placeholder="Your Email Address"
+              />
+              <button
+                id="deposit-button"
+                class="bg-amber-400 px-8 py-2 text-white font-medium rounded hover:bg-sky-700"
+              >
+                Deposit
+              </button>
+            </div>
+          </div>
+          <div class="bg-rose-400 p-8 rounded-xl">
+            <h4 class="text-2xl text-white">Withdraw Here</h4>
+            <div>
+              <input
+                id="withdraw-field"
+                class="w-9/12 block mb-2 px-3 rounded mb-4 mt-4"
+                type="text"
+                placeholder="Your Email Address"
+              />
+              <button
+                id="withdraw-button"
+                class="bg-amber-400 px-8 py-2 text-white font-medium rounded hover:bg-sky-700"
+              >
+                Withdraw
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./bank.js"></script>
+    <script src="./withdraw.js"></script>
+  </body>
+</html>
