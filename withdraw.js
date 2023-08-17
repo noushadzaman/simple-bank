@@ -5,6 +5,12 @@ document
     const withdrawAmountString = withdrawField.value;
     const newWithdrawAmount = parseFloat(withdrawAmountString);
 
+    withdrawField.value = "";
+    if (isNaN(newWithdrawAmount)) {
+      alert("Please Provide a Valid Number");
+      return;
+    }
+
     const withdrawTotalElement = document.getElementById("Withdraw-total");
     const previousWithdrawString = withdrawTotalElement.innerText;
     const previousWithdrawTotal = parseFloat(previousWithdrawString);
@@ -22,5 +28,4 @@ document
 
     const newBalanceTotal = previousBalanceTotal - newWithdrawAmount;
     balanceTotalElement.innerText = newBalanceTotal;
-    withdrawField.value = "";
   });
