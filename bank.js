@@ -17,5 +17,5 @@ document
     const previousBalanceTotal = parseFloat(balanceTotalElementString);
     balanceTotalElement.innerText = previousBalanceTotal + currentDepositTotal;
 
-    depositField.value = '';
+    depositField.value = "";
   });
