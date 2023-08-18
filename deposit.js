@@ -1,3 +1,6 @@
+// normal and Easy method (Repeated Functions)
+// for deposit method
+
 document
   .getElementById("deposit-button")
   .addEventListener("click", function () {

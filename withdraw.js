@@ -1,3 +1,6 @@
+// normal and Easy method (Repeated Functions)
+// for withdraw method
+
 document
   .getElementById("withdraw-button")
   .addEventListener("click", function () {
