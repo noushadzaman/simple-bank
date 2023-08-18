@@ -10,7 +10,7 @@ document
       alert("Please Provide a Valid Number");
       return;
     }
-
+    
     const depositTotalElement = document.getElementById("deposit-total");
     const previousDepositTotalString = depositTotalElement.innerText;
     const previousDepositTotal = parseFloat(previousDepositTotalString);

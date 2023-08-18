@@ -3,8 +3,8 @@ document.getElementById("submit-button").addEventListener("click", function () {
   let pass = document.getElementById("pass").value;
   if (email == "noushadozi333@gmail.com" && pass == 1234) {
     window.location.href = "./bank.html";
-  }
-  else{
-    alert('Invalid User');
+  } else {
+    alert("Invalid User");
   }
 });
+
